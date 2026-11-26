@@ -1,0 +1,3 @@
+IntelliJ IDEA 2025.3
+Build #IU-253.28294.334
+Verified with: idea64.exe --version

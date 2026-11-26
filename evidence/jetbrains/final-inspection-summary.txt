@@ -1,0 +1,29 @@
+Signal Rush — final IntelliJ IDEA inspection
+Date: 2026-11-26
+IDE: IntelliJ IDEA 2025.3
+Build: IU-253.28294.334
+Profile: Signal Rush Checks
+Format: JSON v2
+
+Command pattern:
+idea64.exe inspect <project> .idea/inspectionProfiles/Signal_Rush_Checks.xml <empty-output-dir> -format json -v2
+
+Result:
+- IntelliJ reported "Done" after scanning the project.
+- The clean output directory contained only .descriptions.json.
+- No per-inspection problem JSON files were produced.
+- Source findings under the enabled profile: 0.
+
+Environment warnings (not source findings):
+- WSL was not installed.
+- Several IDE color-scheme resources were unavailable.
+- IntelliJ reported missing descriptions for unrelated database inspection tools.
+No dependency installation or source change was performed to suppress these warnings.
+
+Before-fix evidence retained in this directory:
+- before-css-unresolved.json
+- before-ignored-promises.json
+- before-css-unused.json
+
+The original ignored .idea/inspection-results* directories are not required for public
+submission because these evidence copies are outside the ignored paths.

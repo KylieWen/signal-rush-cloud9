@@ -16,6 +16,10 @@ A round lasts 45 seconds. Signals award 100 points, bonuses 200, noise subtracts
 
 A 52-second silent-captioned H.264 demo is included at [`media/signal-rush-demo.mp4`](media/signal-rush-demo.mp4). It shows the start screen, gameplay, results, local leaderboard, and separate booth display.
 
+## Submission package
+
+See [`SUBMISSION.md`](SUBMISSION.md) for the Chinese delivery guide: public-repository whitelist, demo startup, methodology, a 2:40 video script and narration, asset checklist, JetBrains evidence, and remaining user-authorized release actions. Run `python scripts/verify_local.py` for a dependency-free local verification.
+
 ## Run locally
 
 On Windows, double-click `run-windows.bat` to start the server and open the game. No package installation or network access is required.
@@ -72,7 +76,7 @@ The game supports pointer, touch, and keyboard controls; visible focus; reduced 
 
 ## JetBrains tooling
 
-The project was opened and inspected with **IntelliJ IDEA 2025.3 (build IU-253.28294.334)**. The checked-in profile is `.idea/inspectionProfiles/Signal_Rush_Checks.xml`.
+The project was opened and inspected with **IntelliJ IDEA 2025.3 (build IU-253.28294.334)**. The checked-in profile is `.idea/inspectionProfiles/Signal_Rush_Checks.xml`; public-safe before/after evidence copies are in [`evidence/jetbrains/`](evidence/jetbrains/) because the raw `.idea/inspection-results*` directories are ignored by Git.
 
 Headless inspection command:
 

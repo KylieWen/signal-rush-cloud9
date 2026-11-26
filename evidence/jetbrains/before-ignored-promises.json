@@ -1,0 +1,44 @@
+{
+  "problems": [
+    {
+      "file": "file://$PROJECT_DIR$/sw.js",
+      "line": 9,
+      "offset": 7,
+      "length": 11,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Result of method call returning a promise is ignored",
+        "id": "JSIgnoredPromiseFromCall",
+        "severity": "WARNING",
+        "attribute_key": "WARNING_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/sw.js"
+      },
+      "highlighted_element": "skipWaiting",
+      "language": "JavaScript",
+      "description": "Promise returned from skipWaiting is ignored"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/sw.js",
+      "line": 14,
+      "offset": 15,
+      "length": 5,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Result of method call returning a promise is ignored",
+        "id": "JSIgnoredPromiseFromCall",
+        "severity": "WARNING",
+        "attribute_key": "WARNING_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/sw.js"
+      },
+      "highlighted_element": "claim",
+      "language": "JavaScript",
+      "description": "Promise returned from claim is ignored"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+Signal Rush local verification
+Timestamp: 2026-11-26T21:36:02+08:00
+Mode: offline/local only; no installs, uploads, or commits
+
+Required package files: 21 present
+License: MIT
+Web app manifest: valid
+HTML local asset references and CSP: valid
+Service-worker app shell: 13 local entries present
+PNG media/01-start.png: 762x975
+PNG media/02-gameplay.png: 762x975
+PNG media/03-results.png: 762x975
+PNG media/04-leaderboard.png: 762x975
+PNG media/05-booth-display.png: 762x1515
+Demo video: 52.000s (limit 180s)
+Node: v24.19.0
+Node tests: 26/26 passed
+✔ round constants and clock formatting are stable (0.8912ms)
+✔ multiplier tiers reward sustained streaks (0.2715ms)
+✔ accuracy is bounded and empty attempts are zero (0.1946ms)
+✔ grades combine score, accuracy, and hit count (0.1797ms)
+✔ starting a round resets all results and creates playable targets (0.6657ms)
+✔ signal hits award points and increase the streak (0.3243ms)
+✔ a four-hit streak activates the 1.5x multiplier on the next hit (0.2471ms)
+✔ misses subtract points, reset streak, and affect accuracy (0.1363ms)
+✔ bonus targets use their own base value (0.2256ms)
+✔ noise targets penalize score, reset streak, and cannot make it negative (0.1817ms)
+✔ expired signals count as misses and reset the streak (0.2919ms)
+✔ pause freezes time and blocks hits; resume continues the same round (0.1463ms)
+✔ long frame gaps are capped and the round ends at exactly 45 seconds (1.3499ms)
+✔ finished rounds ignore input and cannot be resumed (0.0998ms)
+✔ keyboard selection skips noise and cycles valid targets (0.3107ms)
+✔ a keyboard lock with no available target records a normal miss (0.128ms)
+✔ pointer hit testing respects target radius (0.0794ms)
+✔ resizing keeps targets inside the new bounds (0.1441ms)
+✔ one hundred booth rounds reset cleanly without target leaks (11.8464ms)
+✔ target population is capped (0.1848ms)
+✔ names are normalized and bounded (0.7505ms)
+✔ entries clamp invalid numeric values (0.4109ms)
+✔ leaderboard sorts by score, accuracy, then timestamp (0.7853ms)
+✔ record persists a top-ten board and returns rank (0.6564ms)
+✔ corrupt storage falls back safely (0.1995ms)
+✔ board remains usable when storage is disabled (0.1339ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 186.7493
+Local server: Python 3.13.1 on 127.0.0.1:54674
+HTTP 200 /: text/html, security headers valid
+HTTP 200 /index.html?booth=1: text/html, security headers valid
+HTTP 200 /leaderboard.html: text/html, security headers valid
+HTTP 200 /sw.js: text/javascript, security headers valid
+HTTP 200 /game-core.js: text/javascript, security headers valid
+HTTP 200 /styles.css: text/css, security headers valid
+HTTP 200 /manifest.webmanifest: application/manifest+json, security headers valid
+
+RESULT: PASS

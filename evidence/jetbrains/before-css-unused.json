@@ -1,0 +1,340 @@
+{
+  "problems": [
+    {
+      "file": "file://$PROJECT_DIR$/leaderboard-display.css",
+      "line": 19,
+      "offset": 0,
+      "length": 11,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/leaderboard-display.css"
+      },
+      "hints": [],
+      "highlighted_element": ".board-rank",
+      "language": "CSS",
+      "description": "Selector board-rank is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/leaderboard-display.css",
+      "line": 20,
+      "offset": 0,
+      "length": 11,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/leaderboard-display.css"
+      },
+      "hints": [],
+      "highlighted_element": ".board-name",
+      "language": "CSS",
+      "description": "Selector board-name is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/leaderboard-display.css",
+      "line": 22,
+      "offset": 0,
+      "length": 13,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/leaderboard-display.css"
+      },
+      "hints": [],
+      "highlighted_element": ".board-points",
+      "language": "CSS",
+      "description": "Selector board-points is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/leaderboard-display.css",
+      "line": 23,
+      "offset": 0,
+      "length": 12,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/leaderboard-display.css"
+      },
+      "hints": [],
+      "highlighted_element": ".board-empty",
+      "language": "CSS",
+      "description": "Selector board-empty is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/leaderboard-display.css",
+      "line": 26,
+      "offset": 278,
+      "length": 11,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/leaderboard-display.css"
+      },
+      "hints": [],
+      "highlighted_element": ".board-name",
+      "language": "CSS",
+      "description": "Selector board-name is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/leaderboard-display.css",
+      "line": 26,
+      "offset": 311,
+      "length": 13,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/leaderboard-display.css"
+      },
+      "hints": [],
+      "highlighted_element": ".board-points",
+      "language": "CSS",
+      "description": "Selector board-points is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 180,
+      "offset": 19,
+      "length": 9,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".sound-on",
+      "language": "CSS",
+      "description": "Selector sound-on is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 182,
+      "offset": 23,
+      "length": 11,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".pause-icon",
+      "language": "CSS",
+      "description": "Selector pause-icon is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 218,
+      "offset": 14,
+      "length": 7,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".active",
+      "language": "CSS",
+      "description": "Selector active is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 345,
+      "offset": 12,
+      "length": 8,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".visible",
+      "language": "CSS",
+      "description": "Selector visible is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 349,
+      "offset": 13,
+      "length": 5,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".show",
+      "language": "CSS",
+      "description": "Selector show is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 352,
+      "offset": 14,
+      "length": 5,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".show",
+      "language": "CSS",
+      "description": "Selector show is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 455,
+      "offset": 18,
+      "length": 5,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".rank",
+      "language": "CSS",
+      "description": "Selector rank is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 456,
+      "offset": 18,
+      "length": 7,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".player",
+      "language": "CSS",
+      "description": "Selector player is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 457,
+      "offset": 18,
+      "length": 7,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".points",
+      "language": "CSS",
+      "description": "Selector points is never used"
+    },
+    {
+      "file": "file://$PROJECT_DIR$/styles.css",
+      "line": 459,
+      "offset": 0,
+      "length": 18,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unused selector",
+        "id": "CssUnusedSymbol",
+        "severity": "WARNING",
+        "attribute_key": "NOT_USED_ELEMENT_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/styles.css"
+      },
+      "hints": [],
+      "highlighted_element": ".leaderboard-empty",
+      "language": "CSS",
+      "description": "Selector leaderboard-empty is never used"
+    }
+  ]
+}

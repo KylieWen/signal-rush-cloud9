@@ -1,0 +1,24 @@
+{
+  "problems": [
+    {
+      "file": "file://$PROJECT_DIR$/leaderboard-display.css",
+      "line": 10,
+      "offset": 100,
+      "length": 9,
+      "module": "signal-rush",
+      "problem_class": {
+        "name": "Unresolved custom property",
+        "id": "CssUnresolvedCustomProperty",
+        "severity": "ERROR",
+        "attribute_key": "ERRORS_ATTRIBUTES"
+      },
+      "entry_point": {
+        "TYPE": "file",
+        "FQNAME": "file://$PROJECT_DIR$/leaderboard-display.css"
+      },
+      "highlighted_element": "--display",
+      "language": "CSS",
+      "description": "Cannot resolve \u003ccode\u003e--display\u003c/code\u003e custom property #loc"
+    }
+  ]
+}
