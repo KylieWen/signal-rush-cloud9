@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06111f">
+  <meta name="description" content="Signal Rush — a 45-second neon reaction game. Catch signals, build your streak, and dodge the noise.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'none'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Signal Rush — 45 Second Arcade</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2306111f'/%3E%3Cpath d='M32 10 52 32 32 54 12 32Z' fill='none' stroke='%2359f2ff' stroke-width='5'/%3E%3Cpath d='m32 21 10 11-10 11-10-11Z' fill='%2359f2ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-orb orb-one"></div>
+    <div class="ambient-orb orb-two"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <a class="skip-link" href="#gameCanvas">Skip to game</a>
+
+  <main class="game-shell" aria-label="Signal Rush arcade game">
+    <header class="topbar">
+      <div class="brand" aria-label="Signal Rush">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span class="brand-copy">
+          <strong>SIGNAL<span>RUSH</span></strong>
+          <small>REACTION PROTOCOL / 045</small>
+        </span>
+      </div>
+      <div class="topbar-actions">
+        <span class="system-status" id="systemStatus"><i></i><span>SYSTEM READY</span></span>
+        <button class="icon-button" id="soundButton" type="button" aria-label="Mute sound" aria-pressed="false" title="Toggle sound (M)">
+          <svg class="sound-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15 9a4 4 0 0 1 0 6m3-9a8 8 0 0 1 0 12"/></svg>
+          <svg class="sound-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6m0-6-5 6"/></svg>
+        </button>
+        <button class="icon-button" id="pauseButton" type="button" aria-label="Pause game" title="Pause (P or Escape)" disabled>
+          <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+          <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="hud" aria-label="Round statistics">
+      <div class="stat-card score-card">
+        <span class="stat-label">SCORE</span>
+        <strong id="scoreValue">000000</strong>
+        <span class="stat-accent" aria-hidden="true"></span>
+      </div>
+      <div class="stat-card time-card" id="timeCard">
+        <span class="stat-label">TIME LEFT</span>
+        <strong id="timeValue">0:45</strong>
+        <span class="time-track" aria-hidden="true"><i id="timeProgress"></i></span>
+      </div>
+      <div class="stat-card streak-card">
+        <span class="stat-label">STREAK</span>
+        <div><strong id="streakValue">0</strong><span class="multiplier" id="multiplierValue">×1</span></div>
+        <span class="streak-pips" id="streakPips" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </div>
+      <div class="stat-card accuracy-card">
+        <span class="stat-label">ACCURACY</span>
+        <strong id="accuracyValue">—</strong>
+        <span class="stat-note" id="hitValue">0 SIGNALS</span>
+      </div>
+    </section>
+
+    <section class="playfield" id="playfield" aria-label="Game arena">
+      <canvas id="gameCanvas" tabindex="0" aria-label="Signal Rush arena" aria-describedby="gameInstructions">
+        Your browser needs Canvas support to play Signal Rush.
+      </canvas>
+      <p id="gameInstructions" class="sr-only">Click or tap cyan signal diamonds and blue bonus rings. Avoid red noise spikes. With the arena focused, use left and right arrow keys to select a signal, then Space or Enter to lock it. Press P or Escape to pause and M to toggle sound.</p>
+
+      <div class="field-label field-label-left" aria-hidden="true"><i></i> SECTOR 07</div>
+      <div class="field-label field-label-right" id="fieldMode" aria-hidden="true">AWAITING INPUT</div>
+      <div class="crosshair-corner corner-tl" aria-hidden="true"></div>
+      <div class="crosshair-corner corner-tr" aria-hidden="true"></div>
+      <div class="crosshair-corner corner-bl" aria-hidden="true"></div>
+      <div class="crosshair-corner corner-br" aria-hidden="true"></div>
+
+      <div class="combo-flare" id="comboFlare" aria-hidden="true"><span>OVERDRIVE</span><strong id="flareMultiplier">×2</strong></div>
+      <div class="hit-feedback" id="hitFeedback" aria-hidden="true"></div>
+      <div class="round-callout" id="roundCallout" aria-hidden="true">GO</div>
+
+      <section class="overlay" id="startOverlay" aria-labelledby="startTitle">
+        <div class="start-panel">
+          <div class="eyebrow"><span></span> 45-SECOND ARCADE RUN <span></span></div>
+          <h1 id="startTitle">Catch the signal.<br><em>Beat the noise.</em></h1>
+          <p class="intro">Signals are drifting. Lock on, build your streak,<br class="desktop-break"> and push your score into overdrive.</p>
+
+          <div class="target-legend" aria-label="Target types">
+            <div><span class="legend-shape signal-shape" aria-hidden="true"></span><span><strong>SIGNAL</strong><small>+100 PTS</small></span></div>
+            <div><span class="legend-shape bonus-shape" aria-hidden="true"></span><span><strong>BONUS</strong><small>+200 PTS</small></span></div>
+            <div><span class="legend-shape noise-shape" aria-hidden="true"></span><span><strong>NOISE</strong><small>AVOID · −75</small></span></div>
+          </div>
+
+          <button class="primary-button" id="startButton" type="button">
+            <span>START RUN</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+          <label class="callsign-label">CALLSIGN <input id="playerName" type="text" value="PLAYER" maxlength="12" autocomplete="off" spellcheck="false" aria-label="Callsign for the local leaderboard"></label>
+          <div class="start-options">
+            <label class="toggle-label"><input id="motionToggle" type="checkbox"><span class="toggle" aria-hidden="true"></span> Reduce motion</label>
+            <label class="toggle-label"><input id="soundToggle" type="checkbox" checked><span class="toggle" aria-hidden="true"></span> Sound</label>
+          </div>
+          <p class="best-line">LOCAL BEST <strong id="menuBest">000000</strong><span>•</span> NO SIGN-UP. JUST REFLEXES.</p>
+          <button class="text-button" id="leaderboardButton" type="button">LOCAL LEADERBOARD</button>
+        </div>
+      </section>
+
+      <section class="overlay compact-overlay" id="pauseOverlay" aria-labelledby="pauseTitle" hidden>
+        <div class="dialog-panel">
+          <div class="dialog-icon pause-symbol" aria-hidden="true"><i></i><i></i></div>
+          <div class="eyebrow">RUN SUSPENDED</div>
+          <h2 id="pauseTitle">Signal held.</h2>
+          <p>Your round is frozen. Take a breath, then get back in.</p>
+          <button class="primary-button" id="resumeButton" type="button"><span>RESUME RUN</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg></button>
+          <button class="text-button" id="quitButton" type="button">END RUN</button>
+          <small>P OR ESC TO RESUME</small>
+        </div>
+      </section>
+
+      <section class="overlay compact-overlay" id="resultsOverlay" aria-labelledby="resultsTitle" hidden>
+        <div class="dialog-panel results-panel">
+          <div class="eyebrow" id="resultEyebrow">RUN COMPLETE</div>
+          <div class="result-heading">
+            <div class="grade-orbit" aria-hidden="true"><span id="gradeValue">A</span><i></i></div>
+            <div><h2 id="resultsTitle">Signal strong.</h2><p id="resultMessage">Clean locks. Sharp reflexes.</p></div>
+          </div>
+          <div class="final-score"><span>FINAL SCORE</span><strong id="finalScore">000000</strong><small id="newBest" hidden>NEW LOCAL BEST</small></div>
+          <div class="result-stats">
+            <div><span>SIGNALS</span><strong id="finalHits">0</strong></div>
+            <div><span>ACCURACY</span><strong id="finalAccuracy">0%</strong></div>
+            <div><span>BEST STREAK</span><strong id="finalStreak">0</strong></div>
+          </div>
+          <div class="result-detail"><span id="finalMisses">0 missed</span><i></i><span id="finalBonus">0 bonuses</span></div>
+          <p class="rank-line" id="rankLine">LOCAL RANK —</p>
+          <button class="primary-button" id="replayButton" type="button"><span>RUN IT BACK</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 8a7 7 0 0 1 11.5-2L20 8M4 16l2.4 2A7 7 0 0 0 18 16"/></svg></button>
+          <button class="text-button" id="resultsLeaderboardButton" type="button">VIEW LOCAL LEADERBOARD</button>
+          <small id="boothCountdown" hidden>NEXT RUN IN 15</small>
+        </div>
+      </section>
+
+      <section class="overlay compact-overlay" id="leaderboardOverlay" aria-labelledby="leaderboardTitle" hidden>
+        <div class="dialog-panel leaderboard-panel">
+          <div class="eyebrow">OFFLINE HALL OF SIGNALS</div>
+          <h2 id="leaderboardTitle">Local leaderboard.</h2>
+          <p>Top ten runs saved on this device. No account, server, or Wi-Fi required.</p>
+          <ol class="leaderboard-list" id="leaderboardList"></ol>
+          <button class="primary-button" id="closeLeaderboardButton" type="button"><span>BACK TO THE GAME</span></button>
+          <button class="text-button" id="clearLeaderboardButton" type="button">CLEAR LOCAL SCORES</button>
+        </div>
+      </section>
+    </section>
+
+    <footer class="control-bar">
+      <div class="control-hints">
+        <span><span class="control-key pointer-key" aria-hidden="true"></span> CLICK / TAP TO LOCK</span>
+        <span><kbd>←</kbd><kbd>→</kbd> SELECT <kbd>SPACE</kbd> LOCK</span>
+        <span><kbd>P</kbd> PAUSE</span>
+      </div>
+      <div class="footer-meta"><span>45 SEC</span><i></i><span>OFFLINE READY</span></div>
+    </footer>
+  </main>
+
+  <div id="announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="game-core.js"></script>
+  <script src="audio.js"></script>
+  <script src="renderer.js"></script>
+  <script src="leaderboard.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

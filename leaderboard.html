@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06111f">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'none'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Signal Rush — Local Leaderboard</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="leaderboard-display.css">
+</head>
+<body class="leaderboard-screen">
+  <main class="board-shell">
+    <header class="board-header">
+      <div class="brand" aria-label="Signal Rush">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span class="brand-copy"><strong>SIGNAL<span>RUSH</span></strong><small>LOCAL HALL OF SIGNALS</small></span>
+      </div>
+      <div class="board-clock"><span>DEVICE TIME</span><strong id="clock">--:--</strong></div>
+    </header>
+
+    <section class="board-hero">
+      <div><span class="board-eyebrow">TOP SIGNAL</span><strong id="topScore">000000</strong></div>
+      <div class="board-hero-copy"><h1>Beat the noise.</h1><p>45 seconds. One device. Endless rematches.</p></div>
+    </section>
+
+    <section class="board-panel" aria-labelledby="boardTitle">
+      <div class="board-panel-head"><h2 id="boardTitle">Local leaderboard</h2><span id="boardStatus">WAITING FOR RUNS</span></div>
+      <ol id="boardList" class="board-list"></ol>
+    </section>
+
+    <footer class="board-footer">
+      <span>OPEN <code>index.html?booth=1</code> ON THIS DEVICE TO PLAY</span>
+      <span>OFFLINE READY · NO ACCOUNT · AUTO-UPDATES</span>
+      <button id="clearBoard" class="text-button" type="button" hidden>CLEAR SCORES</button>
+    </footer>
+  </main>
+  <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+  <script src="leaderboard.js"></script>
+  <script src="leaderboard-display.js"></script>
+</body>
+</html>

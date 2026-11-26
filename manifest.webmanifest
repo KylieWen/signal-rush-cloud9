@@ -1,0 +1,14 @@
+{
+  "name": "Signal Rush — 45 Second Arcade",
+  "short_name": "Signal Rush",
+  "description": "Catch signals, build a streak, and beat the noise in a 45-second offline reaction game.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#06111f",
+  "theme_color": "#06111f",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

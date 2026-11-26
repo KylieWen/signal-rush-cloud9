@@ -1,0 +1,10 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Signal Rush Checks" />
+    <inspection_tool class="JSIgnoredPromiseFromCall" enabled="true" level="WARNING" />
+    <inspection_tool class="JSUnresolvedReference" enabled="false" level="WARNING" />
+    <inspection_tool class="CssUnusedSymbol" enabled="true" level="WARNING" />
+    <inspection_tool class="HtmlUnknownTarget" enabled="true" level="WARNING" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="WARNING" />
+  </profile>
+</component>

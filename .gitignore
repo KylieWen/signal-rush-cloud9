@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.idea/inspection-results/
+.idea/inspection-results-*/
+.DS_Store
+*.webm
