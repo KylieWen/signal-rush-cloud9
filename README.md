@@ -18,7 +18,7 @@ A 52-second silent-captioned H.264 demo is included at [`media/signal-rush-demo.
 
 ## Run locally
 
-No package installation or network access is required.
+On Windows, double-click `run-windows.bat` to start the server and open the game. No package installation or network access is required.
 
 ```bash
 python server.py --port 8010
