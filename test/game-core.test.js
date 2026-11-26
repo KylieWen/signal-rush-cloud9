@@ -228,6 +228,25 @@ test('resizing keeps targets inside the new bounds', () => {
   }
 });
 
+test('one hundred booth rounds reset cleanly without target leaks', () => {
+  const game = new SignalRushGame({ random: fixedRandom(), width: 800, height: 450 });
+  for (let round = 0; round < 100; round += 1) {
+    game.start();
+    for (let frame = 0; frame < 451 && game.status === 'running'; frame += 1) {
+      if (frame % 20 === 0 && game.targets.length) game.hitTarget(game.targets[0]);
+      game.update(100);
+    }
+    assert.equal(game.status, 'finished');
+    assert.equal(game.targets.length, 0);
+    assert.ok(game.score >= 0);
+    assert.equal(game.nextId > 1, true);
+  }
+  game.start();
+  assert.equal(game.score, 0);
+  assert.equal(game.attempts, 0);
+  assert.equal(game.targets.length, 2);
+});
+
 test('target population is capped', () => {
   const game = newGame();
   for (let index = 0; index < 20; index += 1) game.spawnTarget();

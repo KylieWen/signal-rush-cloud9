@@ -30,7 +30,9 @@ Open `http://127.0.0.1:8010/`.
 node --test
 ```
 
-The test suite covers game rules, input boundaries, scoring, timing, pause/resume, target selection, leaderboard sorting, persistence, corrupt storage, and storage-disabled fallback.
+The test suite covers game rules, input boundaries, scoring, timing, pause/resume, target selection, leaderboard sorting, persistence, corrupt storage, storage-disabled fallback, and a 100-round booth stress test. Current result: **26/26 passed**.
+
+Browser verification covered a complete round, score persistence after reload, the separate leaderboard display, offline reload with the server stopped, and booth auto-restart after the 15-second countdown.
 
 ## Booth mode
 
