@@ -1,0 +1,7 @@
+Python: 3.13.1
+Node: v24.19.0
+ffmpeg: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+ffprobe: ffprobe version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers
+ffmpeg path: C:\Users\12509\AppData\Local\Temp\signal-rush-video-tools-20261126\venv\Lib\site-packages\static_ffmpeg\bin\win32\ffmpeg.exe
+ffprobe path: C:\Users\12509\AppData\Local\Temp\signal-rush-video-tools-20261126\venv\Lib\site-packages\static_ffmpeg\bin\win32\ffprobe.exe
+Installation scope: isolated temporary venv only; no global install.

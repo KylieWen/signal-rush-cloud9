@@ -41,6 +41,7 @@ REQUIRED_FILES = (
     "manifest.webmanifest",
     "icon.svg",
     "media/signal-rush-demo.mp4",
+    "media/signal-rush-demo-final.mp4",
     "scripts/verify_local.py",
 )
 REQUIRED_MEDIA = (
@@ -177,10 +178,11 @@ def verify_static_package() -> list[str]:
         width, height = png_dimensions(ROOT / relative)
         lines.append(f"PNG {relative}: {width}x{height}")
 
-    duration = mp4_duration_seconds(ROOT / "media/signal-rush-demo.mp4")
-    if not 0 < duration <= 180:
-        raise AssertionError(f"Demo video duration exceeds three minutes: {duration:.3f}s")
-    lines.append(f"Demo video: {duration:.3f}s (limit 180s)")
+    for relative in ("media/signal-rush-demo.mp4", "media/signal-rush-demo-final.mp4"):
+        duration = mp4_duration_seconds(ROOT / relative)
+        if not 0 < duration <= 180:
+            raise AssertionError(f"Demo video duration exceeds three minutes: {relative}: {duration:.3f}s")
+        lines.append(f"Demo video {relative}: {duration:.3f}s (limit 180s)")
     return lines
 
 

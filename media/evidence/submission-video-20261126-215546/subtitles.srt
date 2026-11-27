@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:04,000
+45-second reaction arcade for event booths.
+45 秒反应街机，为现场摊位快速轮换而设计。
+
+2
+00:00:04,000 --> 00:00:08,000
+Edited only from the supplied demo, screenshots and evidence.
+仅使用已有 Demo、截图与证据剪辑；未补录新游戏结果。
+
+3
+00:00:08,000 --> 00:00:12,000
+Start with one click or tap.
+点击或轻触即可开始。
+
+4
+00:00:12,000 --> 00:00:16,000
+No login, installation or API key.
+无需登录、安装或 API Key。
+
+5
+00:00:16,000 --> 00:00:20,000
+Every run is 45 seconds; results appear immediately.
+每局固定 45 秒，结算即时可见。
+
+6
+00:00:20,000 --> 00:00:25,000
+Catch cyan signals; collect blue bonuses; avoid red noise.
+接住青色信号，收集蓝色奖励，避开红色噪声。
+
+7
+00:00:25,000 --> 00:00:30,000
+The supplied demo shows the actual game screen and HUD.
+已有 Demo 展示真实游戏画面与 HUD。
+
+8
+00:00:30,000 --> 00:00:35,000
+Sustained streaks unlock 1.5x, 2x, 3x and 4x.
+连续命中逐步解锁 1.5、2、3、4 倍。
+
+9
+00:00:35,000 --> 00:00:40,000
+Misses subtract 25; noise subtracts 75.
+空点扣 25 分，噪声扣 75 分。
+
+10
+00:00:40,000 --> 00:00:44,000
+Short rounds keep booth lines moving.
+短局循环让摊位排队持续流动。
+
+11
+00:00:44,000 --> 00:00:49,000
+Score, grade, accuracy, best streak and local rank.
+等级、分数、准确率、最佳连击与本地排名一次呈现。
+
+12
+00:00:49,000 --> 00:00:53,000
+This supplied demo run scored 000600 with 100% accuracy.
+已有 Demo 该局分数 000600，准确率 100%。
+
+13
+00:00:53,000 --> 00:00:56,000
+One click returns to the next run.
+一键再来，立即开始下一局。
+
+14
+00:00:56,000 --> 00:01:01,000
+Top ten runs stay on this device.
+本地前十保存在同一设备。
+
+15
+00:01:01,000 --> 00:01:08,000
+No account, server or Wi-Fi is required.
+无需账号、服务器或 Wi-Fi。
+
+16
+00:01:08,000 --> 00:01:13,000
+A separate display mirrors the local leaderboard.
+独立屏幕实时镜像本地排行榜。
+
+17
+00:01:13,000 --> 00:01:18,000
+Booth mode is designed to reset 15 seconds after a run.
+Booth 模式在每局结束后 15 秒自动重置。
+
+18
+00:01:18,000 --> 00:01:23,000
+The countdown pauses while the leaderboard is open.
+打开排行榜时，倒计时暂停。
+
+19
+00:01:23,000 --> 00:01:28,000
+One device can run play and display together.
+同一设备可同时运行游戏与排行榜显示。
+
+20
+00:01:28,000 --> 00:01:32,000
+This is a local board, not a cross-device network ranking.
+排行榜仅限本机，并非跨设备网络排行榜。
+
+21
+00:01:32,000 --> 00:01:37,000
+Arrow keys select; Space or Enter locks a target.
+方向键选择，空格或回车锁定。
+
+22
+00:01:37,000 --> 00:01:41,000
+P or Escape pauses; M toggles sound.
+P 或 Esc 暂停，M 切换声音。
+
+23
+00:01:41,000 --> 00:01:46,000
+Reduced motion, focus, contrast and live status are included.
+提供减少动态、可见焦点、高对比与状态播报。
+
+24
+00:01:46,000 --> 00:01:51,000
+A deterministic core owns scoring, timing and round state.
+确定性核心统一管理计分、计时与回合状态。
+
+25
+00:01:51,000 --> 00:01:56,000
+Rendering, audio, input and storage stay separate.
+渲染、音频、输入与存储保持分离。
+
+26
+00:01:56,000 --> 00:02:00,000
+Project inspected with IntelliJ IDEA 2025.3.
+项目使用 IntelliJ IDEA 2025.3 检查。
+
+27
+00:02:00,000 --> 00:02:04,000
+The IDE found a CSS variable and two lifecycle promises.
+IDE 发现 CSS 变量与两个生命周期 Promise 问题。
+
+28
+00:02:04,000 --> 00:02:07,000
+Both issue types were fixed; final source findings: 0.
+两类问题均已修复；最终源码问题为 0。
+
+29
+00:02:07,000 --> 00:02:10,000
+Environment warnings are listed separately, not counted as source findings.
+环境警告单独注明，不计为源码问题。
+
+30
+00:02:10,000 --> 00:02:14,000
+All 26 Node tests passed in this assembly run.
+本次剪辑时运行 Node 测试，26 项全部通过。
+
+31
+00:02:14,000 --> 00:02:18,000
+Coverage includes input, scoring, pause, persistence and corrupt storage.
+覆盖输入、计分、暂停、持久化与损坏存储。
+
+32
+00:02:18,000 --> 00:02:20,000
+Includes a 100-round booth reset stress test.
+包含 100 局 Booth 连续重置压力测试。
+
+33
+00:02:20,000 --> 00:02:25,000
+After first load, the app shell supports offline reload.
+首次加载后，应用外壳支持离线重载。
+
+34
+00:02:25,000 --> 00:02:29,000
+Artwork and sound are original; no external assets or trackers.
+图形与音效均为原创，无外部素材或追踪器。
+
+35
+00:02:29,000 --> 00:02:32,000
+MIT licensed and documented for local startup.
+采用 MIT 许可，附本地启动说明。
+
+36
+00:02:32,000 --> 00:02:36,000
+Simple controls. Short rounds. High-score rematches.
+简单操作，短局循环，高分复玩。
+
+37
+00:02:36,000 --> 00:02:40,000
+Run instructions and evidence are in the submission package.
+启动说明与完整证据均在提交包中。

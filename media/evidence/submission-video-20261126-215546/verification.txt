@@ -1,0 +1,27 @@
+Signal Rush 160-second draft verification
+RESULT: PASS
+
+File: C:\Users\12509\Documents\Qoder\2026-11-26\abb09c0b\signal-rush\media\evidence\submission-video-20261126-215546\signal-rush-cloud9-jetbrains-160s-draft.mp4
+Container duration: 160.000000 s
+Video: h264, 1280x720, 30/1 fps, yuv420p
+Decoded video frames: 4800
+Audio: aac, 48000 Hz, 2 channels, 160.000000 s
+Full ffmpeg audio+video decode: exit 0, no decode errors
+Source files unchanged during assembly: yes
+Node tests in this run: 26 passed, 0 failed
+JetBrains evidence validated: 1 CSS finding + 2 Promise findings before; 0 source findings after
+
+Checks:
+- duration_exactly_160s: PASS
+- video_codec_h264: PASS
+- resolution_1280x720: PASS
+- frame_rate_30fps: PASS
+- decoded_frame_count_4800: PASS
+- pixel_format_yuv420p: PASS
+- audio_codec_aac: PASS
+- audio_48khz_stereo: PASS
+- audio_duration_160s: PASS
+
+ffprobe command: C:\Users\12509\AppData\Local\Temp\signal-rush-video-tools-20261126\venv\Lib\site-packages\static_ffmpeg\bin\win32\ffprobe.exe -v error -count_frames -show_streams -show_format -of json C:\Users\12509\Documents\Qoder\2026-11-26\abb09c0b\signal-rush\media\evidence\submission-video-20261126-215546\signal-rush-cloud9-jetbrains-160s-draft.mp4
+decode command: C:\Users\12509\AppData\Local\Temp\signal-rush-video-tools-20261126\venv\Lib\site-packages\static_ffmpeg\bin\win32\ffmpeg.exe -hide_banner -v info -xerror -i C:\Users\12509\Documents\Qoder\2026-11-26\abb09c0b\signal-rush\media\evidence\submission-video-20261126-215546\signal-rush-cloud9-jetbrains-160s-draft.mp4 -map 0:v:0 -map 0:a:0 -f null -
+Raw outputs: ffprobe.json and decode-verification.txt

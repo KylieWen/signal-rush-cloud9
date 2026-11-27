@@ -1,0 +1,61 @@
+SIGNAL RUSH — LOCAL 2:40 SUBMISSION VIDEO DRAFT
+
+Output
+C:\Users\12509\Documents\Qoder\2026-11-26\abb09c0b\signal-rush\media\evidence\submission-video-20261126-215546\signal-rush-cloud9-jetbrains-160s-draft.mp4
+
+Specifications
+- Duration: exactly 160.000 seconds (2:40), 4800 frames
+- Video: H.264 High, 1280x720, 30 fps, yuv420p
+- Audio: AAC, 48 kHz stereo; supplied demo audio retained at its timeline positions
+- Container: MP4 with faststart
+- SHA-256: bba14a9ee7c2fd4ee9d939faf764e0a509a49d8939c00a6d5ad9ed38c43a3739
+
+Content timeline
+0:00-0:08  Title and local-draft disclosure
+0:08-0:20  Start, controls and zero-setup method
+0:20-0:44  Supplied demo gameplay plus scoring and multiplier rules
+0:44-0:56  Actual supplied result: 000600, grade D, 100% accuracy, best streak 1, local rank #6
+0:56-1:08  Local top-ten leaderboard
+1:08-1:32  Booth auto-reset method and separate display
+1:32-1:46  Keyboard, pause, reduced motion, focus, contrast and status announcements
+1:46-1:56  Deterministic-core engineering method
+1:56-2:10  IntelliJ IDEA 2025.3 inspection evidence and before/after findings
+2:10-2:20  Fresh node --test run: 26/26 passed, 0 failed
+2:20-2:32  Offline app shell, original assets and MIT license
+2:32-2:40  Closing card and local package references
+
+Evidence and honesty notes
+- The 52-second source demo is a captioned edited demo, not a newly recorded continuous
+  45-second live run. It is labeled as supplied demo footage; no new gameplay or score
+  was fabricated.
+- Source audio measures effectively silent (-91 dB). No local TTS was used. Readable
+  bilingual cards and burned-in Chinese/English subtitles carry the explanation.
+- JetBrains slides render the existing text/JSON evidence. They are not fabricated IDE
+  screenshots. The final claim is 0 source findings under the enabled profile; listed
+  environment warnings are explicitly separate.
+- Node tests were rerun during assembly. Raw output is in node-test-output.txt.
+- Source hashes before and after the successful assembly match; the existing demo and
+  source files were not modified by this script.
+- During an earlier render, SUBMISSION.md was externally edited to reference an earlier
+  draft hash. That source file was left untouched as requested; use REPORT.txt and
+  SHA256SUMS for the final draft hash.
+- ffmpeg/ffprobe were installed only in an isolated temporary venv, not globally.
+
+Verification
+- ffprobe.json: stream/container metadata and counted frames
+- decode-verification.txt: full audio+video decode log, exit 0
+- verification.txt: concise PASS checks
+- source-hashes.sha256: hashes of existing project inputs
+- SHA256SUMS: hashes of generated deliverables
+- source-contact-sheet.jpg: visual map of the supplied demo
+
+Limitations / remaining work before a formal submission
+- Add a newly recorded continuous live run, IDE screen capture, keyboard/mobile footage,
+  and optional narration if desired.
+- Public repository, Demo and video links remain pending user authorization.
+- Nothing was uploaded, published, pushed, registered, accepted, or purchased.
+
+Rebuild
+Run this script with Python and pass --ffmpeg/--ffprobe if the isolated tools are not at
+their recorded paths. The script refuses to render a 26/26 claim unless the current
+Node run actually reports 26 passed and 0 failed.

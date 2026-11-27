@@ -1,0 +1,34 @@
+✔ round constants and clock formatting are stable (0.9064ms)
+✔ multiplier tiers reward sustained streaks (0.1356ms)
+✔ accuracy is bounded and empty attempts are zero (0.1117ms)
+✔ grades combine score, accuracy, and hit count (0.0885ms)
+✔ starting a round resets all results and creates playable targets (0.3481ms)
+✔ signal hits award points and increase the streak (0.2077ms)
+✔ a four-hit streak activates the 1.5x multiplier on the next hit (0.1834ms)
+✔ misses subtract points, reset streak, and affect accuracy (0.1051ms)
+✔ bonus targets use their own base value (0.1707ms)
+✔ noise targets penalize score, reset streak, and cannot make it negative (0.1686ms)
+✔ expired signals count as misses and reset the streak (0.2662ms)
+✔ pause freezes time and blocks hits; resume continues the same round (0.147ms)
+✔ long frame gaps are capped and the round ends at exactly 45 seconds (1.4987ms)
+✔ finished rounds ignore input and cannot be resumed (0.0956ms)
+✔ keyboard selection skips noise and cycles valid targets (0.2886ms)
+✔ a keyboard lock with no available target records a normal miss (0.1097ms)
+✔ pointer hit testing respects target radius (0.0694ms)
+✔ resizing keeps targets inside the new bounds (0.1247ms)
+✔ one hundred booth rounds reset cleanly without target leaks (8.8165ms)
+✔ target population is capped (0.1619ms)
+✔ names are normalized and bounded (0.784ms)
+✔ entries clamp invalid numeric values (0.2808ms)
+✔ leaderboard sorts by score, accuracy, then timestamp (0.6041ms)
+✔ record persists a top-ten board and returns rank (0.5098ms)
+✔ corrupt storage falls back safely (0.1766ms)
+✔ board remains usable when storage is disabled (0.1183ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 163.3769

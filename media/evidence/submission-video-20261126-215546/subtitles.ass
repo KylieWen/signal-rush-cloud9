@@ -1,0 +1,205 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,23,&H00FFFFFF,&H000000FF,&H00101820,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,50,50,20,1
+Style: Panel,Microsoft YaHei,10,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Section,Segoe UI,18,&H00F4E056,&H000000FF,&H00101820,&H00101820,1,0,0,0,100,100,1,0,3,6,0,7,44,40,24,1
+Style: Badge,Segoe UI,13,&H00B8C4CE,&H000000FF,&H00101820,&H00101820,1,0,0,0,100,100,0,0,3,5,0,9,40,40,24,1
+Style: CardTitle,Segoe UI,33,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: CardBody,Microsoft YaHei,23,&H00E6EEF3,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Small,Segoe UI,16,&H00B8C4CE,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Mono,Consolas,19,&H00DCE7ED,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Metric,Segoe UI,55,&H00F4E056,&H000000FF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Pass,Segoe UI,94,&H00F4E056,&H000000FF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: CenterTitle,Segoe UI,78,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,1,0,0,0,100,100,1,0,1,0,0,5,0,0,0,1
+Style: CenterAccent,Segoe UI,29,&H00F4E056,&H000000FF,&H00000000,&H00000000,1,0,0,0,100,100,1,0,1,0,0,5,0,0,0,1
+Style: CenterBody,Microsoft YaHei,24,&H00E6EEF3,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Subtitle,Microsoft YaHei,22,&H00FFFFFF,&H000000FF,&H00101820,&H00000000,0,0,0,0,100,100,0,0,3,9,0,2,54,54,18,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.00,Subtitle,,0,0,0,,{\fad(220,220)}45-second reaction arcade for event booths.\N45 秒反应街机，为现场摊位快速轮换而设计。
+Dialogue: 0,0:00:04.00,0:00:08.00,Subtitle,,0,0,0,,{\fad(220,220)}Edited only from the supplied demo, screenshots and evidence.\N仅使用已有 Demo、截图与证据剪辑；未补录新游戏结果。
+Dialogue: 0,0:00:08.00,0:00:12.00,Subtitle,,0,0,0,,{\fad(220,220)}Start with one click or tap.\N点击或轻触即可开始。
+Dialogue: 0,0:00:12.00,0:00:16.00,Subtitle,,0,0,0,,{\fad(220,220)}No login, installation or API key.\N无需登录、安装或 API Key。
+Dialogue: 0,0:00:16.00,0:00:20.00,Subtitle,,0,0,0,,{\fad(220,220)}Every run is 45 seconds; results appear immediately.\N每局固定 45 秒，结算即时可见。
+Dialogue: 0,0:00:20.00,0:00:25.00,Subtitle,,0,0,0,,{\fad(220,220)}Catch cyan signals; collect blue bonuses; avoid red noise.\N接住青色信号，收集蓝色奖励，避开红色噪声。
+Dialogue: 0,0:00:25.00,0:00:30.00,Subtitle,,0,0,0,,{\fad(220,220)}The supplied demo shows the actual game screen and HUD.\N已有 Demo 展示真实游戏画面与 HUD。
+Dialogue: 0,0:00:30.00,0:00:35.00,Subtitle,,0,0,0,,{\fad(220,220)}Sustained streaks unlock 1.5x, 2x, 3x and 4x.\N连续命中逐步解锁 1.5、2、3、4 倍。
+Dialogue: 0,0:00:35.00,0:00:40.00,Subtitle,,0,0,0,,{\fad(220,220)}Misses subtract 25; noise subtracts 75.\N空点扣 25 分，噪声扣 75 分。
+Dialogue: 0,0:00:40.00,0:00:44.00,Subtitle,,0,0,0,,{\fad(220,220)}Short rounds keep booth lines moving.\N短局循环让摊位排队持续流动。
+Dialogue: 0,0:00:44.00,0:00:49.00,Subtitle,,0,0,0,,{\fad(220,220)}Score, grade, accuracy, best streak and local rank.\N等级、分数、准确率、最佳连击与本地排名一次呈现。
+Dialogue: 0,0:00:49.00,0:00:53.00,Subtitle,,0,0,0,,{\fad(220,220)}This supplied demo run scored 000600 with 100% accuracy.\N已有 Demo 该局分数 000600，准确率 100%。
+Dialogue: 0,0:00:53.00,0:00:56.00,Subtitle,,0,0,0,,{\fad(220,220)}One click returns to the next run.\N一键再来，立即开始下一局。
+Dialogue: 0,0:00:56.00,0:01:01.00,Subtitle,,0,0,0,,{\fad(220,220)}Top ten runs stay on this device.\N本地前十保存在同一设备。
+Dialogue: 0,0:01:01.00,0:01:08.00,Subtitle,,0,0,0,,{\fad(220,220)}No account, server or Wi-Fi is required.\N无需账号、服务器或 Wi-Fi。
+Dialogue: 0,0:01:08.00,0:01:13.00,Subtitle,,0,0,0,,{\fad(220,220)}A separate display mirrors the local leaderboard.\N独立屏幕实时镜像本地排行榜。
+Dialogue: 0,0:01:13.00,0:01:18.00,Subtitle,,0,0,0,,{\fad(220,220)}Booth mode is designed to reset 15 seconds after a run.\NBooth 模式在每局结束后 15 秒自动重置。
+Dialogue: 0,0:01:18.00,0:01:23.00,Subtitle,,0,0,0,,{\fad(220,220)}The countdown pauses while the leaderboard is open.\N打开排行榜时，倒计时暂停。
+Dialogue: 0,0:01:23.00,0:01:28.00,Subtitle,,0,0,0,,{\fad(220,220)}One device can run play and display together.\N同一设备可同时运行游戏与排行榜显示。
+Dialogue: 0,0:01:28.00,0:01:32.00,Subtitle,,0,0,0,,{\fad(220,220)}This is a local board, not a cross-device network ranking.\N排行榜仅限本机，并非跨设备网络排行榜。
+Dialogue: 0,0:01:32.00,0:01:37.00,Subtitle,,0,0,0,,{\fad(220,220)}Arrow keys select; Space or Enter locks a target.\N方向键选择，空格或回车锁定。
+Dialogue: 0,0:01:37.00,0:01:41.00,Subtitle,,0,0,0,,{\fad(220,220)}P or Escape pauses; M toggles sound.\NP 或 Esc 暂停，M 切换声音。
+Dialogue: 0,0:01:41.00,0:01:46.00,Subtitle,,0,0,0,,{\fad(220,220)}Reduced motion, focus, contrast and live status are included.\N提供减少动态、可见焦点、高对比与状态播报。
+Dialogue: 0,0:01:46.00,0:01:51.00,Subtitle,,0,0,0,,{\fad(220,220)}A deterministic core owns scoring, timing and round state.\N确定性核心统一管理计分、计时与回合状态。
+Dialogue: 0,0:01:51.00,0:01:56.00,Subtitle,,0,0,0,,{\fad(220,220)}Rendering, audio, input and storage stay separate.\N渲染、音频、输入与存储保持分离。
+Dialogue: 0,0:01:56.00,0:02:00.00,Subtitle,,0,0,0,,{\fad(220,220)}Project inspected with IntelliJ IDEA 2025.3.\N项目使用 IntelliJ IDEA 2025.3 检查。
+Dialogue: 0,0:02:00.00,0:02:04.00,Subtitle,,0,0,0,,{\fad(220,220)}The IDE found a CSS variable and two lifecycle promises.\NIDE 发现 CSS 变量与两个生命周期 Promise 问题。
+Dialogue: 0,0:02:04.00,0:02:07.00,Subtitle,,0,0,0,,{\fad(220,220)}Both issue types were fixed; final source findings: 0.\N两类问题均已修复；最终源码问题为 0。
+Dialogue: 0,0:02:07.00,0:02:10.00,Subtitle,,0,0,0,,{\fad(220,220)}Environment warnings are listed separately, not counted as source findings.\N环境警告单独注明，不计为源码问题。
+Dialogue: 0,0:02:10.00,0:02:14.00,Subtitle,,0,0,0,,{\fad(220,220)}All 26 Node tests passed in this assembly run.\N本次剪辑时运行 Node 测试，26 项全部通过。
+Dialogue: 0,0:02:14.00,0:02:18.00,Subtitle,,0,0,0,,{\fad(220,220)}Coverage includes input, scoring, pause, persistence and corrupt storage.\N覆盖输入、计分、暂停、持久化与损坏存储。
+Dialogue: 0,0:02:18.00,0:02:20.00,Subtitle,,0,0,0,,{\fad(220,220)}Includes a 100-round booth reset stress test.\N包含 100 局 Booth 连续重置压力测试。
+Dialogue: 0,0:02:20.00,0:02:25.00,Subtitle,,0,0,0,,{\fad(220,220)}After first load, the app shell supports offline reload.\N首次加载后，应用外壳支持离线重载。
+Dialogue: 0,0:02:25.00,0:02:29.00,Subtitle,,0,0,0,,{\fad(220,220)}Artwork and sound are original; no external assets or trackers.\N图形与音效均为原创，无外部素材或追踪器。
+Dialogue: 0,0:02:29.00,0:02:32.00,Subtitle,,0,0,0,,{\fad(220,220)}MIT licensed and documented for local startup.\N采用 MIT 许可，附本地启动说明。
+Dialogue: 0,0:02:32.00,0:02:36.00,Subtitle,,0,0,0,,{\fad(220,220)}Simple controls. Short rounds. High-score rematches.\N简单操作，短局循环，高分复玩。
+Dialogue: 0,0:02:36.00,0:02:40.00,Subtitle,,0,0,0,,{\fad(220,220)}Run instructions and evidence are in the submission package.\N启动说明与完整证据均在提交包中。
+Dialogue: 0,0:00:00.00,0:00:08.00,Section,,0,0,0,,{\pos(640,54)\an8}LOCAL SUBMISSION DRAFT / 本地参赛草案
+Dialogue: 0,0:00:00.00,0:00:04.00,Badge,,0,0,0,,{\pos(1240,20)\an9}SUPPLIED DEMO / 已有 DEMO
+Dialogue: 0,0:00:04.00,0:00:08.00,Badge,,0,0,0,,{\pos(1240,20)\an9}TITLE CARD / 标题卡
+Dialogue: 0,0:00:04.00,0:00:08.00,CenterTitle,,0,0,0,,{\pos(640,266)}SIGNAL RUSH
+Dialogue: 0,0:00:04.00,0:00:08.00,CenterAccent,,0,0,0,,{\pos(640,356)}CATCH THE SIGNAL. BEAT THE NOISE.
+Dialogue: 0,0:00:04.00,0:00:08.00,CenterBody,,0,0,0,,{\pos(640,414)}45 秒反应街机 · Cloud9 × JetBrains 2026
+Dialogue: 0,0:00:08.00,0:00:20.00,Section,,0,0,0,,{\pos(40,18)}01 / START & METHOD
+Dialogue: 0,0:00:08.00,0:00:11.00,Badge,,0,0,0,,{\pos(1240,20)\an9}SUPPLIED DEMO / 已有 DEMO
+Dialogue: 0,0:00:11.00,0:00:20.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:00:11.00,0:00:20.00,CardTitle,,0,0,0,,{\pos(58,120)\fad(220,220)}One button. Zero setup.
+Dialogue: 0,0:00:11.00,0:00:20.00,CardBody,,0,0,0,,{\pos(58,184)\fad(220,220)}No login · no install · no API key\N无需登录、安装或 API Key
+Dialogue: 0,0:00:11.00,0:00:20.00,CardBody,,0,0,0,,{\pos(58,262)\fad(220,220)}Mouse / touch / keyboard\N鼠标、触屏、键盘均可操作
+Dialogue: 0,0:00:11.00,0:00:20.00,CardBody,,0,0,0,,{\pos(58,340)\fad(220,220)}Fixed 45-second rounds\N每局固定 45 秒，成绩即时可见
+Dialogue: 0,0:00:11.00,0:00:20.00,Mono,,0,0,0,,{\pos(58,452)\fad(220,220)}python server.py --port 8010
+Dialogue: 0,0:00:11.00,0:00:20.00,Small,,0,0,0,,{\pos(58,486)\fad(220,220)}Local startup / 本地启动
+Dialogue: 0,0:00:20.00,0:00:44.00,Section,,0,0,0,,{\pos(40,18)}02 / GAMEPLAY & SCORING
+Dialogue: 0,0:00:20.00,0:00:30.00,Badge,,0,0,0,,{\pos(1240,20)\an9}SUPPLIED DEMO / 已有 DEMO
+Dialogue: 0,0:00:30.00,0:00:44.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:00:30.00,0:00:44.00,CardTitle,,0,0,0,,{\pos(58,116)\fad(220,220)}Read the field. Build the streak.
+Dialogue: 4,0:00:30.00,0:00:44.00,Panel,,0,0,0,,{\an7\pos(58,184)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 9 0 l 9 48 l 0 48{\p0}
+Dialogue: 0,0:00:30.00,0:00:44.00,CardBody,,0,0,0,,{\pos(84,180)\fad(220,220)}CYAN SIGNAL   +100\N青色信号 +100
+Dialogue: 4,0:00:30.00,0:00:44.00,Panel,,0,0,0,,{\an7\pos(58,252)\p1\1c&HF4B85A&\1a&H00&}m 0 0 l 9 0 l 9 48 l 0 48{\p0}
+Dialogue: 0,0:00:30.00,0:00:44.00,CardBody,,0,0,0,,{\pos(84,248)\fad(220,220)}BLUE BONUS    +200\N蓝色奖励 +200
+Dialogue: 4,0:00:30.00,0:00:44.00,Panel,,0,0,0,,{\an7\pos(58,320)\p1\1c&H6882F4&\1a&H00&}m 0 0 l 9 0 l 9 48 l 0 48{\p0}
+Dialogue: 0,0:00:30.00,0:00:44.00,CardBody,,0,0,0,,{\pos(84,316)\fad(220,220)}RED NOISE      -75\N红色噪声 -75
+Dialogue: 4,0:00:30.00,0:00:44.00,Panel,,0,0,0,,{\an7\pos(58,388)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 9 0 l 9 48 l 0 48{\p0}
+Dialogue: 0,0:00:30.00,0:00:44.00,CardBody,,0,0,0,,{\pos(84,384)\fad(220,220)}STREAK  4 / 9 / 16 / 25\N连击解锁 1.5× / 2× / 3× / 4×
+Dialogue: 0,0:00:30.00,0:00:44.00,Small,,0,0,0,,{\pos(58,500)\fad(220,220)}Miss -25 · score never below 0\N空点 -25 · 分数不低于 0
+Dialogue: 0,0:00:44.00,0:00:56.00,Section,,0,0,0,,{\pos(40,18)}03 / RESULTS
+Dialogue: 0,0:00:44.00,0:00:51.00,Badge,,0,0,0,,{\pos(1240,20)\an9}SUPPLIED DEMO / 已有 DEMO
+Dialogue: 0,0:00:51.00,0:00:56.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:00:51.00,0:00:56.00,CardTitle,,0,0,0,,{\pos(58,118)\fad(220,220)}Every run ends with evidence.
+Dialogue: 0,0:00:51.00,0:00:56.00,Metric,,0,0,0,,{\pos(58,184)\fad(220,220)}000600
+Dialogue: 0,0:00:51.00,0:00:56.00,Small,,0,0,0,,{\pos(60,250)\fad(220,220)}FINAL SCORE / 最终分数
+Dialogue: 0,0:00:51.00,0:00:56.00,CardBody,,0,0,0,,{\pos(58,306)\fad(220,220)}GRADE D · ACCURACY 100%\N等级 D · 准确率 100%
+Dialogue: 0,0:00:51.00,0:00:56.00,CardBody,,0,0,0,,{\pos(58,382)\fad(220,220)}BEST STREAK 1 · LOCAL RANK #6\N最佳连击 1 · 本地排名 #6
+Dialogue: 0,0:00:51.00,0:00:56.00,Small,,0,0,0,,{\pos(58,500)\fad(220,220)}Values from supplied demo / 数值来自已有 Demo
+Dialogue: 0,0:00:56.00,0:01:08.00,Section,,0,0,0,,{\pos(40,18)}04 / LOCAL LEADERBOARD
+Dialogue: 0,0:00:56.00,0:01:03.00,Badge,,0,0,0,,{\pos(1240,20)\an9}SUPPLIED DEMO / 已有 DEMO
+Dialogue: 0,0:01:03.00,0:01:08.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:01:03.00,0:01:08.00,CardTitle,,0,0,0,,{\pos(58,120)\fad(220,220)}Local top ten. No account.
+Dialogue: 0,0:01:03.00,0:01:08.00,CardBody,,0,0,0,,{\pos(58,194)\fad(220,220)}Same device + same origin\N同一设备、同一 origin
+Dialogue: 0,0:01:03.00,0:01:08.00,CardBody,,0,0,0,,{\pos(58,272)\fad(220,220)}Sanitized callsigns and bounded entries\N清洗呼号并限制条目数量
+Dialogue: 0,0:01:03.00,0:01:08.00,CardBody,,0,0,0,,{\pos(58,350)\fad(220,220)}Sort: score → accuracy → timestamp\N排序：分数 → 准确率 → 时间
+Dialogue: 0,0:01:03.00,0:01:08.00,Small,,0,0,0,,{\pos(58,500)\fad(220,220)}No backend or Wi-Fi / 无后端、无需 Wi-Fi
+Dialogue: 0,0:01:08.00,0:01:32.00,Section,,0,0,0,,{\pos(40,18)}05 / BOOTH & DISPLAY
+Dialogue: 0,0:01:08.00,0:01:15.00,Badge,,0,0,0,,{\pos(1240,20)\an9}SUPPLIED DEMO / 已有 DEMO
+Dialogue: 0,0:01:20.00,0:01:25.00,Badge,,0,0,0,,{\pos(1240,20)\an9}SUPPLIED DEMO / 已有 DEMO
+Dialogue: 0,0:01:15.00,0:01:20.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:01:15.00,0:01:20.00,CardTitle,,0,0,0,,{\pos(58,116)\fad(220,220)}Built for the booth.
+Dialogue: 0,0:01:15.00,0:01:20.00,CardBody,,0,0,0,,{\pos(58,184)\fad(220,220)}15-second auto-reset after each run\N每局结束后 15 秒自动重置
+Dialogue: 0,0:01:15.00,0:01:20.00,CardBody,,0,0,0,,{\pos(58,262)\fad(220,220)}Countdown pauses while leaderboard is open\N打开排行榜时倒计时暂停
+Dialogue: 0,0:01:15.00,0:01:20.00,CardBody,,0,0,0,,{\pos(58,340)\fad(220,220)}Second screen mirrors local top ten\N第二块屏幕镜像本地前十
+Dialogue: 0,0:01:15.00,0:01:20.00,Mono,,0,0,0,,{\pos(58,452)\fad(220,220)}index.html?booth=1
+Dialogue: 0,0:01:15.00,0:01:20.00,Small,,0,0,0,,{\pos(58,490)\fad(220,220)}Documented booth flow / 文档所述摊位流程
+Dialogue: 0,0:01:25.00,0:01:32.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:01:25.00,0:01:32.00,CardTitle,,0,0,0,,{\pos(58,116)\fad(220,220)}Built for the booth.
+Dialogue: 0,0:01:25.00,0:01:32.00,CardBody,,0,0,0,,{\pos(58,184)\fad(220,220)}15-second auto-reset after each run\N每局结束后 15 秒自动重置
+Dialogue: 0,0:01:25.00,0:01:32.00,CardBody,,0,0,0,,{\pos(58,262)\fad(220,220)}Countdown pauses while leaderboard is open\N打开排行榜时倒计时暂停
+Dialogue: 0,0:01:25.00,0:01:32.00,CardBody,,0,0,0,,{\pos(58,340)\fad(220,220)}Second screen mirrors local top ten\N第二块屏幕镜像本地前十
+Dialogue: 0,0:01:25.00,0:01:32.00,Mono,,0,0,0,,{\pos(58,452)\fad(220,220)}index.html?booth=1
+Dialogue: 0,0:01:25.00,0:01:32.00,Small,,0,0,0,,{\pos(58,490)\fad(220,220)}Documented booth flow / 文档所述摊位流程
+Dialogue: 0,0:01:32.00,0:01:46.00,Section,,0,0,0,,{\pos(40,18)}06 / ACCESSIBILITY
+Dialogue: 0,0:01:32.00,0:01:46.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:01:32.00,0:01:46.00,CardTitle,,0,0,0,,{\pos(58,116)\fad(220,220)}More than one way to play.
+Dialogue: 0,0:01:32.00,0:01:46.00,CardBody,,0,0,0,,{\pos(58,184)\fad(220,220)}← → select · Space / Enter lock\N方向键选择 · 空格 / 回车锁定
+Dialogue: 0,0:01:32.00,0:01:46.00,CardBody,,0,0,0,,{\pos(58,252)\fad(220,220)}P / Esc pause · M sound\NP / Esc 暂停 · M 切换声音
+Dialogue: 0,0:01:32.00,0:01:46.00,CardBody,,0,0,0,,{\pos(58,320)\fad(220,220)}Visible focus · reduced motion · high contrast\N可见焦点 · 减少动态 · 高对比
+Dialogue: 0,0:01:32.00,0:01:46.00,CardBody,,0,0,0,,{\pos(58,388)\fad(220,220)}Live status announcements\N状态播报
+Dialogue: 0,0:01:32.00,0:01:46.00,Small,,0,0,0,,{\pos(58,472)\fad(220,220)}Canvas is not fully screen-reader operable; keyboard selection\Nand status announcements provide an alternative path.\NCanvas 非完整屏幕阅读器可操作；键盘选择与状态播报提供替代路径。
+Dialogue: 0,0:01:46.00,0:01:56.00,Section,,0,0,0,,{\pos(40,18)}07 / ENGINEERING METHOD
+Dialogue: 4,0:01:46.00,0:01:56.00,Panel,,0,0,0,,{\an7\pos(46,106)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 6 0 l 6 492 l 0 492{\p0}
+Dialogue: 0,0:01:46.00,0:01:56.00,CardTitle,,0,0,0,,{\pos(78,116)\fad(220,220)}Deterministic core. Separate systems.
+Dialogue: 0,0:01:46.00,0:01:56.00,CenterAccent,,0,0,0,,{\pos(640,212)}game-core.js
+Dialogue: 0,0:01:46.00,0:01:56.00,CenterBody,,0,0,0,,{\pos(640,258)}↓
+Dialogue: 3,0:01:46.00,0:01:56.00,Panel,,0,0,0,,{\an7\pos(78,296)\p1\1c&H123044&\1a&H70&}m 0 0 l 244 0 l 244 58 l 0 58{\p0}
+Dialogue: 0,0:01:46.00,0:01:56.00,Mono,,0,0,0,,{\pos(200,325)\an5}renderer.js
+Dialogue: 3,0:01:46.00,0:01:56.00,Panel,,0,0,0,,{\an7\pos(362,296)\p1\1c&H123044&\1a&H70&}m 0 0 l 244 0 l 244 58 l 0 58{\p0}
+Dialogue: 0,0:01:46.00,0:01:56.00,Mono,,0,0,0,,{\pos(484,325)\an5}audio.js
+Dialogue: 3,0:01:46.00,0:01:56.00,Panel,,0,0,0,,{\an7\pos(646,296)\p1\1c&H123044&\1a&H70&}m 0 0 l 244 0 l 244 58 l 0 58{\p0}
+Dialogue: 0,0:01:46.00,0:01:56.00,Mono,,0,0,0,,{\pos(768,325)\an5}game.js
+Dialogue: 3,0:01:46.00,0:01:56.00,Panel,,0,0,0,,{\an7\pos(930,296)\p1\1c&H123044&\1a&H70&}m 0 0 l 244 0 l 244 58 l 0 58{\p0}
+Dialogue: 0,0:01:46.00,0:01:56.00,Mono,,0,0,0,,{\pos(1052,325)\an5}leaderboard.js
+Dialogue: 0,0:01:46.00,0:01:56.00,CardBody,,0,0,0,,{\pos(78,398)\fad(220,220)}Scoring · timing · multipliers · round state\N计分、计时、倍率与回合状态
+Dialogue: 0,0:01:46.00,0:01:56.00,CardBody,,0,0,0,,{\pos(78,458)\fad(220,220)}100ms long-frame cap · auto-pause on focus loss\N长帧最多推进 100ms · 失焦自动暂停
+Dialogue: 0,0:01:46.00,0:01:56.00,CardBody,,0,0,0,,{\pos(78,518)\fad(220,220)}Service Worker app shell · CSP connect-src 'none'
+Dialogue: 0,0:01:46.00,0:01:56.00,Small,,0,0,0,,{\pos(78,568)\fad(220,220)}Original SVG / CSS / Canvas + Web Audio / 原创图形与合成音效
+Dialogue: 0,0:01:56.00,0:02:01.00,Section,,0,0,0,,{\pos(40,18)}08 / JETBRAINS INSPECTION
+Dialogue: 4,0:01:56.00,0:02:01.00,Panel,,0,0,0,,{\an7\pos(46,106)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 6 0 l 6 492 l 0 492{\p0}
+Dialogue: 0,0:01:56.00,0:02:01.00,CardTitle,,0,0,0,,{\pos(78,116)\fad(220,220)}IntelliJ IDEA 2025.3
+Dialogue: 0,0:01:56.00,0:02:01.00,Mono,,0,0,0,,{\pos(78,176)\fad(220,220)}Build IU-253.28294.334
+Dialogue: 3,0:01:56.00,0:02:01.00,Panel,,0,0,0,,{\an7\pos(78,232)\p1\1c&H123044&\1a&H55&}m 0 0 l 720 0 l 720 86 l 0 86{\p0}
+Dialogue: 0,0:01:56.00,0:02:01.00,CenterAccent,,0,0,0,,{\pos(438,275)}Signal Rush Checks
+Dialogue: 0,0:01:56.00,0:02:01.00,CardBody,,0,0,0,,{\pos(78,364)\fad(220,220)}JSIgnoredPromiseFromCall · CssUnusedSymbol · HtmlUnknownTarget
+Dialogue: 0,0:01:56.00,0:02:01.00,Small,,0,0,0,,{\pos(78,432)\fad(220,220)}Profile: .idea/inspectionProfiles/Signal_Rush_Checks.xml\N检查配置副本：evidence/jetbrains/inspection-profile.xml
+Dialogue: 0,0:01:56.00,0:02:01.00,Small,,0,0,0,,{\pos(78,520)\fad(220,220)}Verified with idea64.exe --version / 版本来自本地证据
+Dialogue: 0,0:02:01.00,0:02:06.00,Section,,0,0,0,,{\pos(40,18)}08 / JETBRAINS INSPECTION
+Dialogue: 4,0:02:01.00,0:02:06.00,Panel,,0,0,0,,{\an7\pos(46,106)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 6 0 l 6 492 l 0 492{\p0}
+Dialogue: 0,0:02:01.00,0:02:06.00,CardTitle,,0,0,0,,{\pos(78,112)\fad(220,220)}Before / 修复前
+Dialogue: 0,0:02:01.00,0:02:06.00,Mono,,0,0,0,,{\pos(78,190)\fad(220,220)}CSS  leaderboard-display.css:10
+Dialogue: 0,0:02:01.00,0:02:06.00,CardBody,,0,0,0,,{\pos(78,224)\fad(220,220)}Unresolved --display custom property\N未解析 CSS 自定义属性
+Dialogue: 0,0:02:01.00,0:02:06.00,Mono,,0,0,0,,{\pos(78,316)\fad(220,220)}JS   sw.js:9
+Dialogue: 0,0:02:01.00,0:02:06.00,CardBody,,0,0,0,,{\pos(78,350)\fad(220,220)}skipWaiting() promise ignored / Promise 未等待
+Dialogue: 0,0:02:01.00,0:02:06.00,Mono,,0,0,0,,{\pos(78,424)\fad(220,220)}JS   sw.js:14
+Dialogue: 0,0:02:01.00,0:02:06.00,CardBody,,0,0,0,,{\pos(78,458)\fad(220,220)}clients.claim() promise ignored / Promise 未等待
+Dialogue: 0,0:02:01.00,0:02:06.00,Small,,0,0,0,,{\pos(78,556)\fad(220,220)}Evidence: before-css-unresolved.json · before-ignored-promises.json
+Dialogue: 0,0:02:06.00,0:02:10.00,Section,,0,0,0,,{\pos(40,18)}08 / JETBRAINS INSPECTION
+Dialogue: 4,0:02:06.00,0:02:10.00,Panel,,0,0,0,,{\an7\pos(46,106)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 6 0 l 6 492 l 0 492{\p0}
+Dialogue: 0,0:02:06.00,0:02:10.00,CardTitle,,0,0,0,,{\pos(78,112)\fad(220,220)}After / 修复后
+Dialogue: 0,0:02:06.00,0:02:10.00,Pass,,0,0,0,,{\pos(248,306)}0
+Dialogue: 0,0:02:06.00,0:02:10.00,CenterAccent,,0,0,0,,{\pos(248,390)}SOURCE FINDINGS
+Dialogue: 0,0:02:06.00,0:02:10.00,CenterBody,,0,0,0,,{\pos(248,432)}源码问题
+Dialogue: 0,0:02:06.00,0:02:10.00,CardBody,,0,0,0,,{\pos(492,206)\fad(220,220)}Done · clean output contained only .descriptions.json\N检查完成；干净输出目录仅有 .descriptions.json
+Dialogue: 0,0:02:06.00,0:02:10.00,CardBody,,0,0,0,,{\pos(492,318)\fad(220,220)}CSS variable and lifecycle promises fixed\NCSS 变量与生命周期 Promise 已修复
+Dialogue: 0,0:02:06.00,0:02:10.00,Small,,0,0,0,,{\pos(492,430)\fad(220,220)}WSL, color-scheme and unrelated database-description warnings\Nare environment warnings, not source findings.\N环境警告单独注明，不计为源码问题。
+Dialogue: 0,0:02:10.00,0:02:20.00,Section,,0,0,0,,{\pos(40,18)}09 / TESTS
+Dialogue: 4,0:02:10.00,0:02:20.00,Panel,,0,0,0,,{\an7\pos(46,106)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 6 0 l 6 492 l 0 492{\p0}
+Dialogue: 0,0:02:10.00,0:02:20.00,CardTitle,,0,0,0,,{\pos(78,112)\fad(220,220)}node --test
+Dialogue: 0,0:02:10.00,0:02:20.00,Pass,,0,0,0,,{\pos(360,292)}26 / 26
+Dialogue: 0,0:02:10.00,0:02:20.00,CenterAccent,,0,0,0,,{\pos(360,382)}PASS · 0 FAIL
+Dialogue: 3,0:02:10.00,0:02:20.00,Panel,,0,0,0,,{\an7\pos(710,176)\p1\1c&H123044&\1a&H55&}m 0 0 l 410 0 l 410 236 l 0 236{\p0}
+Dialogue: 0,0:02:10.00,0:02:20.00,Mono,,0,0,0,,{\pos(742,204)}tests         26\Npass          26\Nfail           0\Nduration_ms  163.3769
+Dialogue: 0,0:02:10.00,0:02:20.00,CardBody,,0,0,0,,{\pos(78,454)\fad(220,220)}Input · scoring · pause · persistence · corrupt storage\N输入、计分、暂停、持久化与损坏存储
+Dialogue: 0,0:02:10.00,0:02:20.00,CardBody,,0,0,0,,{\pos(78,522)\fad(220,220)}100-round booth reset stress test / 100 局 Booth 压力测试
+Dialogue: 0,0:02:10.00,0:02:20.00,Small,,0,0,0,,{\pos(78,578)\fad(220,220)}Captured during assembly / 本次剪辑时实际运行
+Dialogue: 0,0:02:20.00,0:02:32.00,Section,,0,0,0,,{\pos(40,18)}10 / OFFLINE & ORIGINAL
+Dialogue: 0,0:02:20.00,0:02:32.00,Panel,,0,0,0,,{\an7\pos(28,88)\p1\1c&H0B1822&\1a&H30&}m 0 0 l 636 0 l 636 520 l 0 520{\p0}
+Dialogue: 0,0:02:20.00,0:02:32.00,CardTitle,,0,0,0,,{\pos(58,116)\fad(220,220)}Offline ready. Original by design.
+Dialogue: 0,0:02:20.00,0:02:32.00,CardBody,,0,0,0,,{\pos(58,190)\fad(220,220)}Service Worker caches the app shell after first load\N首次加载后缓存应用外壳
+Dialogue: 0,0:02:20.00,0:02:32.00,CardBody,,0,0,0,,{\pos(58,268)\fad(220,220)}No trackers, external assets, music or network APIs\N无追踪器、外部素材、音乐或网络 API
+Dialogue: 0,0:02:20.00,0:02:32.00,CardBody,,0,0,0,,{\pos(58,346)\fad(220,220)}Original SVG / CSS / Canvas + Web Audio\N原创 SVG / CSS / Canvas 与 Web Audio
+Dialogue: 0,0:02:20.00,0:02:32.00,CardBody,,0,0,0,,{\pos(58,424)\fad(220,220)}MIT licensed · local run instructions included\NMIT 许可 · 附本地启动说明
+Dialogue: 0,0:02:20.00,0:02:32.00,Small,,0,0,0,,{\pos(58,530)\fad(220,220)}README.md · SUBMISSION.md
+Dialogue: 2,0:02:32.00,0:02:40.00,Panel,,0,0,0,,{\an7\pos(0,0)\p1\1c&H07121F&\1a&H76&}m 0 0 l 1280 0 l 1280 720 l 0 720{\p0}
+Dialogue: 0,0:02:32.00,0:02:40.00,Section,,0,0,0,,{\pos(640,48)\an8}11 / CLOSING
+Dialogue: 0,0:02:32.00,0:02:40.00,CenterTitle,,0,0,0,,{\pos(640,238)}SIGNAL RUSH
+Dialogue: 4,0:02:32.00,0:02:40.00,Panel,,0,0,0,,{\an7\pos(500,322)\p1\1c&HF4E056&\1a&H00&}m 0 0 l 280 0 l 280 5 l 0 5{\p0}
+Dialogue: 0,0:02:32.00,0:02:40.00,CenterAccent,,0,0,0,,{\pos(640,376)}45 SEC · OFFLINE READY · PLAY AGAIN
+Dialogue: 0,0:02:32.00,0:02:40.00,CenterBody,,0,0,0,,{\pos(640,424)}45 秒 · 离线可玩 · 随时再来
+Dialogue: 0,0:02:32.00,0:02:40.00,CenterBody,,0,0,0,,{\pos(640,492)}README.md · SUBMISSION.md · evidence/jetbrains/
+Dialogue: 0,0:02:32.00,0:02:40.00,Small,,0,0,0,,{\pos(640,552)\an5}Local draft — public repository, Demo and video links pending user authorization\N本地草案 — 公开仓库、Demo 与视频链接待用户授权

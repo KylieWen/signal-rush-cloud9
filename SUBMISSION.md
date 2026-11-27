@@ -13,8 +13,8 @@
 | 方法说明 | 已具备 | 根目录英文 `README.md` 与本文件第 4 节 |
 | JetBrains 工具 | 已使用 | IntelliJ IDEA 2025.3，build IU-253.28294.334 |
 | 自动测试 | 26/26 通过 | Node 内置测试，含 100 局 booth 连续重置压力测试 |
-| 视频草案 | 已有 52 秒 | `media/signal-rush-demo.mp4`，H.264、1280×720、字幕草案 |
-| 正式参赛视频 | 待录制 | 第 5 节提供 2 分 40 秒分镜与中文旁白 |
+| 视频素材 | 已有 52 秒素材 + 2:40 最终本地成片 | `media/signal-rush-demo.mp4`；`media/signal-rush-demo-final.mp4`，160.000 秒、H.264、1280×720、AAC |
+| 正式参赛视频 | 本地 2:40 最终素材已完成并验证，待授权上传 | 使用真实 Demo、截图、JetBrains 文本/JSON 证据与重跑测试；无可听旁白，不伪造 IDE 画面。SHA256 `bba14a9ee7c2fd4ee9d939faf764e0a509a49d8939c00a6d5ad9ed38c43a3739`，完整解码通过 |
 | 公开仓库 / 公网 Demo / 视频链接 | 待用户授权后执行 | 当前本地 Git 为 `main`，未配置远程仓库 |
 
 官方时间：2026-11-17 开始，提交截止为 **2027-01-12 11:00 PT**，即北京时间 **2027-01-13 03:00**。报名、资格、奖项协议和最终提交动作由用户确认。
@@ -136,7 +136,7 @@ python scripts/verify_local.py --report evidence/local-verification.txt
 - 提供可见焦点、减少动态、高对比、状态播报和响应式布局。Canvas 内容并非完整屏幕阅读器可操作，键盘选择与状态播报是替代交互路径。
 - 名称、SVG/CSS/Canvas 图形与 Web Audio 音效均为项目原创；未使用 Cloud9 官方标志、第三方音乐或外部素材。
 
-## 5. 正式视频分镜与中文旁白稿
+## 5. 视频交付与分镜存档
 
 ### 规格
 
@@ -173,6 +173,7 @@ python scripts/verify_local.py --report evidence/local-verification.txt
 | `media/04-leaderboard.png` | 762×975 | 游戏内本地前十 | 已有 |
 | `media/05-booth-display.png` | 762×1515 | 独立 Booth 排行榜 | 已有 |
 | `media/signal-rush-demo.mp4` | 52s，H.264，1280×720 | 无声字幕画面草案 | 已有；非正式旁白版 |
+| `media/signal-rush-demo-final.mp4` | 160s，H.264，1280×720，AAC | 2:40 最终本地参赛素材 | 已验证；真实 Demo/截图/JetBrains 文本证据，待授权上传 |
 
 ### 建议补录
 
@@ -183,7 +184,7 @@ python scripts/verify_local.py --report evidence/local-verification.txt
 | `media/08-intellij-inspection.png` | IntelliJ 检查配置与修复前后证据 | 视频必需 |
 | `media/09-intellij-tests.png` | IntelliJ 终端 `node --test` 26/26 | 视频必需 |
 | `media/10-mobile-gameplay.png` | 手机竖屏真实操作 | 建议 |
-| `media/signal-rush-demo-final.mp4` | 2:40 旁白、字幕、JetBrains 镜头 | 参赛必需 |
+| `media/signal-rush-demo-final.mp4` | 2:40 真实 Demo、字幕、JetBrains 文本/JSON 证据 | 已完成；待授权上传 |
 
 所有补充素材只保存本地，上传与公开展示由用户决定。
 
